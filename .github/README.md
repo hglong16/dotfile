@@ -13,3 +13,7 @@
 ### Neovim
 
 <img width="1280" alt="neovim" src="https://user-images.githubusercontent.com/83296144/197686036-917c626e-6f8d-4644-8145-85be1b1ea8e4.png">
+
+### Kitty
+
+<img width="1280" alt="kitty" src="https://user-images.githubusercontent.com/83296144/197688618-372b88d0-ef2c-4562-9fe5-42958488a873.png">
