@@ -5,6 +5,8 @@
 - wezTerm
 
 ## Showcase
+### Kitty x zsh 
+<img alt="exa" width="1280" src="https://user-images.githubusercontent.com/83296144/197917011-d251d322-1ad4-43c5-9580-cce40db0bdd8.png">
 
 ### Shell
 
