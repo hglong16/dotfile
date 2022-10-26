@@ -1,5 +1,5 @@
 # Minimal Config
-
+**This is a lightweight config I usually use on my old MacBook Pro 2015 early**
 - neovim (AstroNvim)
 - tmux
 - wezTerm
