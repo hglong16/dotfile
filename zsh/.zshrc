@@ -3,10 +3,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-alias ls="exa -G --colour always --icons"
-alias la="exa -l"
-alias ll="exa --colour always -la"
-alias lla="ll -A --colour always --icons"
 
 
 plugins=( git
@@ -18,3 +14,10 @@ plugins=( git
 source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
+
+#alias 
+
+alias ls="exa -G --colour always --icons"
+alias la="exa -l --icons"
+alias ll="exa --colour always -la --icons"
+alias lla="ll -a --colour always --icons"
