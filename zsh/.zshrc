@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR=$(which nvim)
 
 
 
@@ -19,5 +20,5 @@ eval "$(starship init zsh)"
 
 alias ls="exa -G --colour always --icons"
 alias la="exa -l --icons"
-alias ll="exa --colour always -la --icons"
+alias ll="exa --colour always -l --icons"
 alias lla="ll -a --colour always --icons"
