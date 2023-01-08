@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <script charset="utf-8" src="https://g.alicdn.com/mtb/lib-flexible/0.3.2/flexible.js" crossorigin></script>
+  <script charset="utf-8" src="//g.alicdn.com/code/lib/qrcodejs/1.0.0/qrcode.min.js" crossorigin></script>
+  <script charset="utf-8" src="//g.alicdn.com/mtb/lib-windvane/3.0.6/windvane.js" crossorigin></script>
+  <script charset="utf-8" src="//g.alicdn.com/mtb/lib-mtop/2.6.3/mtop.js" crossorigin></script>
+  <script charset="utf-8" src="//g.alicdn.com/secdev/entry/index.js" crossorigin></script>
+  <link rel="stylesheet" href="https://g.alicdn.com/bsop-static/sufei-punish/0.1.16/build/main.css" />
+  <script src="https://g.alicdn.com/secops/report_button/0.0.18/add_report_button.js" crossorigin></script>
+</head>
+
+<body>
+  <script>
+    with (document)
+    with (body)
+    with (insertBefore(createElement("script"), firstChild))
+    setAttribute(
+      "exparams",
+      "category=&userid=&aplus&yunid=&&trid=2141242716729141156467540e0a4d&asid=AQAAAADDpLZjZYJrMwAAAAASG+SfSdq0GQ==",
+      (id = "tb-beacon-aplus"),
+      (src =
+        (location > "https" ? "//g" : "//g") +
+        ".alicdn.com/alilog/mlog/aplus_v2.js")
+    );
+  </script>
+
+  <punish-component />
+  <script>
+    window._config_ = {
+      renderTo: "#nocaptcha",
+      NCTOKENSTR: "11da77276c284fbc6fd23f588db7c9ed",
+      action: "captcha",
+      HOST: "acs-m.lazada.vn:443",
+      PATH: "/h5/mtop.lazada.cheetah.aff.shortlink.create/1.0",
+      FORMACTIOIN:
+        "/h5/mtop.lazada.cheetah.aff.shortlink.create/1.0/_____tmd_____/verify/",
+      BXSTEP: "100",
+      SECDATA:
+        "xb11da77276c284fbc6fd23f588db7c9ed1672914115a1984346082a-1253251947abaac2aaa__bx__acs-m.lazada.vn%3A443%2Fh5%2Fmtop.lazada.cheetah.aff.shortlink.create%2F1.0",
+      NCAPPKEY: "X82Y__cb08d01e8cdba540162475c491a9bdb2",
+      isUpgrade: "false",
+      customImage:
+        "https://laz-img-cdn.alicdn.com/tfs/TB1URh4xrGYBuNjy0FoXXciBFXa-1080-1080.png",
+      logo: "https://laz-img-cdn.alicdn.com/images/ims-web/TB19SB7aMFY.1VjSZFnXXcFHXXa.png",
+      logoLink: "https://www.lazada.com",
+      copyright: "© Lazada 2021",
+      noCaptchaCallback: "",
+      language: "",
+      languageConfig: "",
+      url: "/h5/mtop.lazada.cheetah.aff.shortlink.create/1.0/_____tmd_____/punish?x5secdata=xb11da77276c284fbc6fd23f588db7c9ed1672914115a1984346082a-1253251947abaac2aaa__bx__acs-m.lazada.vn%3A443%2Fh5%2Fmtop.lazada.cheetah.aff.shortlink.create%2F1.0",
+      languageConfigJson: "",
+      noCaptchaLanguage: "",
+      js: "https://g.alicdn.com/secops/report_button/0.0.18/add_report_button.js",
+      css: "",
+      crossSite: "0",
+    };
+  </script>
+  <!--rgv587_flag:sm-->
+  <script>
+    var ncLanguage = location.search.match(/ncLanguage=([^&]+)/);
+    ncLanguage = ncLanguage && ncLanguage[1];
+    if (ncLanguage) {
+      window._config_.noCaptchaLanguage = ncLanguage;
+    }
+    var custom_config = {
+      loginDialogWidth: "810px",
+      loginDialogHeight: "360px",
+      templateName: "LAZADA通用模板",
+    };
+    var templateName = "";
+    if (typeof custom_config === "object") {
+      templateName = custom_config["templateName"] || "";
+      window._custom_config_ = window._custom_config_ || {};
+      for (var key in custom_config) {
+        window._custom_config_[key] = custom_config[key];
+      }
+    }
+  </script>
+</body>
+<script charset="utf-8" src="//g.alicdn.com/bsop-static/sufei-punish/0.1.16/build/punishpage.min.js"
+  crossorigin></script>
+<script charset="utf-8" type="text/javascript"
+  src="https://g.alicdn.com/dt/tracker/4.0.0/??tracker.Tracker.js,tracker.interfaceTrackerPlugin.js,tracker.performanceTrackerPlugin.js"
+  crossorigin></script>
+<script type="text/javascript">
+  var tracker = new window.Tracker({
+    uidResolver: function () {
+      // 具体获取 userId 逻辑自行实现
+      return "11da77276c284fbc6fd23f588db7c9ed__1.1.1";
+    },
+    pid: "punish-page",
+    plugins: [
+      [window.interfaceTrackerPlugin],
+      [window.performanceTrackerPlugin, {sampleRate: 1}],
+    ],
+  });
+  tracker.install();
+  var urlAction = window.location.href.match(/action=([^&]+)/);
+  urlAction = urlAction ? urlAction[1] : window._config_.action;
+  tracker.log({
+    code: 11, // 系统自动生成，请勿修改 100%
+    c1: "11da77276c284fbc6fd23f588db7c9ed",
+    c2: "0.1.16",
+    msg: "新版处置模板 " + templateName + " " + urlAction, // 异常信息，推荐传入
+    sampleRate: 1.0, // 目前采样率为 100.00%
+  });
+</script>
+
+</html>

@@ -206,7 +206,7 @@ local config = {
                         ["<leader>x"] = { "<cmd>!chmod +x %<cr>", desc = "Chmod +x" },
                         -- harpoon
                         ["<leader>a"] = { "<cmd>lua require('harpoon.mark').add_file()<cr>", desc = "harpoon add file" }, -- change description but the same command
-                        ["<C-e>"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>",
+                        ["<leader>ba"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>",
                                 desc = "harpoon quick menu" }, -- change description but the same command
                         ["<C-t>"] = { "<cmd>lua require('harpoon.ui').nav_next()<cr>", desc = "harpoon next" }, -- change description but the same command
                         ["<C-s>"] = { "<cmd>lua require('harpoon.ui').nav_prev()<cr>", desc = "harpoon back" }, -- change description but the same command
@@ -217,9 +217,12 @@ local config = {
                         ["<esc>"] = false,
                 },
                 i = {
-                        ["<C-y>"] = { "copilot#Accept(<Tab>)", silent = true, expr = true, script = true }
+                        ["<C-y>"] = { "copilot#Accept('<CR>')", silent = true, expr = true, noremap = true,
+                                replace_keycodes = false }
 
                 }
+
+
         },
 
 

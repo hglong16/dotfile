@@ -10,11 +10,16 @@ plugins=( git
           zsh-autosuggestions
           z
           nvm
+          zsh-history-substring-search
+          zsh-syntax-highlighting
   )
 
 source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
+
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
 
 #alias 
 
