@@ -15,4 +15,6 @@ return {
       'MunifTanjim/nui.nvim',
     },
   },
+
+  {      'kyazdani42/nvim-web-devicons' }
 }

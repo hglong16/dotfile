@@ -5,6 +5,7 @@
   "incline.nvim": { "branch": "main", "commit": "610b3081123a0e0c7dca8dd1b71f5f99072439d6" },
   "lazy.nvim": { "branch": "main", "commit": "02482b1ec94e6c2801dbbfc40122c936dd157dea" },
   "neo-tree.nvim": { "branch": "v2.x", "commit": "8238865e1d9c61f1a260c290653f2c419503e0a9" },
+  "neodev.nvim": { "branch": "main", "commit": "a587f5eeb826c10063d0b961d21a541e7868faf3" },
   "noice.nvim": { "branch": "main", "commit": "3d4b80d720fea1905a9df004e70a329f58b3f2b7" },
   "notifier.nvim": { "branch": "master", "commit": "afc9bf7ef8c31cfc716a2b849c34943a9788508b" },
   "nui.nvim": { "branch": "main", "commit": "b99e6cb13dc51768abc1c4c8585045a0c0459ef1" },

@@ -47,6 +47,17 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+vim.api.nvim_create_autocmd('BufEnter', {
+  pattern = '*',
+  callback = function(args)
+    local file_info = vim.loop.fs_stat(args.file)
+    if file_info and file_info.type == 'directory' then
+      require('neo-tree').setup {}
+      vim.cmd('Neotree position=current ' .. args.file)
+    end
+  end,
+})
+
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "gitcommit", "markdown" },
   callback = function()
