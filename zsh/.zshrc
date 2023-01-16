@@ -63,3 +63,5 @@ unset __conda_setup
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
 export PATH=~/Library/Application\ Support/pypoetry/venv/bin/:$PATH # poetry
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
