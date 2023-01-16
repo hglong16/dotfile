@@ -1,2 +1,13 @@
-2023-01-16T16:46:47 Messages  INFO [telescope] ^I...share/nvim/lazy/telescope.nvim/lua/telescope/pickers.lua:484: in function <...share/nvim/lazy/telescope.nvim/lua/telescope/pickers.lua:450>
+023-01-16T16:46:47 Messages  INFO [] ^I...share/nvim/lazy/telescope.nvim/lua/telescope/pickers.lua:484: in function <...share/nvim/lazy/telescope.nvim/lua/telescope/pickers.lua:450>
+
+""
+412
+    2
+
+    3
+    4
+    3
+    12
+4
+
 

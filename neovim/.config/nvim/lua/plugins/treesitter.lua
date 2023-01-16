@@ -29,9 +29,9 @@ return {
     },
     ---@param opts TSConfig
     config = function(plugin, opts)
-      if plugin.ensure_installed then
-        require("lazyvim.util").deprecate("treesitter.ensure_installed", "treesitter.opts.ensure_installed")
-      end
+    if plugin.ensure_installed then
+            require("util").deprecate("treesitter.ensure_installed", "treesitter.opts.ensure_installed")
+          end
       require("nvim-treesitter.configs").setup(opts)
     end,
   },

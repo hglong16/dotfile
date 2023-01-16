@@ -43,7 +43,7 @@ vim.keymap.set("n", "<leader>xq", "<cmd>copen<cr>", { desc = "Open Quickfix List
 -- stylua: ignore start
 
 -- lazygit
-vim.keymap.set("n", "<leader>gg", function() require("lazyvim.util").float_term({ "lazygit" }) end, { desc = "Lazygit (cwd)" })
+vim.keymap.set("n", "<leader>gg", function() require("util").float_term({ "lazygit" }) end, { desc = "Lazygit (cwd)" })
 
 -- quit
 vim.keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit all" })

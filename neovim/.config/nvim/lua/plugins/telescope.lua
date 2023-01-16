@@ -11,7 +11,7 @@
 
       local silent = { silent = true, noremap = true }
       -- Navigate buffers and repos
-      map('n', '<leader>fc', [[<cmd>Telescope commands theme=get_dropdown<cr>]], silent)
+      map('n', '<leader>fc', [[<cmd>Telescope commands theme=get_dropdown<cr>]],silent)
       map('n', '<leader>fb', [[<cmd>Telescope buffers show_all_buffers=true theme=get_dropdown<cr>]], silent)
       map('n', '<leader>fg', [[<cmd>Telescope git_files theme=get_dropdown<cr>]], silent)
       map('n', '<leader>ff', [[<cmd>Telescope find_files theme=get_dropdown<cr>]], silent)
