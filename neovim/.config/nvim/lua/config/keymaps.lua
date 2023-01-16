@@ -1,4 +1,3 @@
--- This file is automatically loaded by lazyvim.plugins.config
 
 
 -- better up/down
