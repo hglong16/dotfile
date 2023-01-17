@@ -1,5 +1,3 @@
-
-
 -- better up/down
 vim.keymap.set("n", "j", "v:count == 0 ? 'gjzz' : 'jzz'", { expr = true, silent = true })
 vim.keymap.set("n", "k", "v:count == 0 ? 'gkzz' : 'kzz'", { expr = true, silent = true })
@@ -17,8 +15,6 @@ vim.keymap.set("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window he
 vim.keymap.set("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
 vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
-
-
 
 -- Clear search with <esc>
 vim.keymap.set({ "n" }, "<cr>", "<cmd>noh<cr><esc>", { desc = "Escape and clear hlsearch" })
@@ -51,4 +47,3 @@ vim.keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit all" })
 if vim.fn.has("nvim-0.9.0") == 1 then
   vim.keymap.set("n", "<leader>sH", vim.show_pos, { desc = "Highlight Groups at cursor" })
 end
-
