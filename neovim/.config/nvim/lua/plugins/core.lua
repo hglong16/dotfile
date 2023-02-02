@@ -1,14 +1,21 @@
 return {
-	{
-		"lewis6991/impatient.nvim",
-
-		{
-			"vigoux/notifier.nvim",
-			config = function()
-				require("notifier").setup({
-					-- You configuration here
-				})
-			end,
-		},
-	},
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
+    },
+  },
+  {
+    "max397574/better-escape.nvim",
+    config = function()
+      require("better_escape").setup()
+    end,
+  },
+  { import = "lazyvim.plugins.extras.lang.typescript" },
+  {
+    "numToStr/Navigator.nvim",
+    config = function()
+      require("Navigator").setup()
+    end,
+  },
 }

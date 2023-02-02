@@ -1,0 +1,48 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set NERDTree
+set commentary
+set argtextobj
+set textobj-entire
+set ReplaceWithRegister
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+
+
+set idearefactormode=keep
+imap jk <Esc>
+
+set timeoutlen=1000
+
+map  <silent> <C-e> :NERDTreeToggle<cr>
+map <S-h> <Action>(PreviousTab)
+map <S-l> <Action>(NextTab)
+
+map <leader>d <Action>(Debug)
+map <leader>rn <Action>(RenameElement)
+map <leader>ca <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map  ]m <Action>(GotoNextError)
+map  [m <Action>(GotoPreviousError)
+
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>o <Action>(FileStructurePopup)
