@@ -70,5 +70,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+eval $(thefuck --alias)
+
+
 # Created by `pipx` on 2023-01-17 08:22:59
 export PATH="$PATH:/Users/hglong16/.local/bin"
