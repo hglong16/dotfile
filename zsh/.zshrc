@@ -10,7 +10,6 @@ plugins=( git
           zsh-autosuggestions
           z
           nvm
-          zsh-history-substring-search
           zsh-syntax-highlighting
   )
 
