@@ -73,4 +73,5 @@ eval $(thefuck --alias)
 
 
 # Created by `pipx` on 2023-01-17 08:22:59
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:/Users/hglong16/.local/bin"
