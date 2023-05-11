@@ -18,4 +18,7 @@ return {
       require("Navigator").setup()
     end,
   },
+  {
+    "xiyaowong/transparent.nvim",
+  },
 }
