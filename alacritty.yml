@@ -1,0 +1,13 @@
+
+font:
+  normal:
+    family: FiraCode Nerd Font
+    style: Medium
+  bold:
+    family: FiraCode
+    style: Bold
+
+window:
+  opacity: 0.87
+  startup_mode: Maximized
+  title: ️ $ hglong16 🎹"
