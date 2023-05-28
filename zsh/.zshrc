@@ -10,6 +10,7 @@ plugins=( git
           zsh-autosuggestions
           z
           nvm
+          zsh-history-substring-search
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -75,3 +76,12 @@ eval "$(thefuck --alias)"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:/Users/hglong16/.local/bin"
 export PATH="$PATH:/~/.rye/shims:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/long/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm endexport NI_CONFIG_FILE=/home/long/.config/ni/nirca
+export NI_CONFIG_FILE="$HOME/.config/ni/nirc"

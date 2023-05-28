@@ -1,0 +1,45 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+true-color = true
+
+[editor.lsp]
+display-messages = true
+# display-signature-help-docs = false
+# LSP Type Hints default is false
+display-inlay-hints = true
+# [6417]
+# inline-diagnostics= { min-diagnostic-width = 80 }
+# display-diagnostic-message=false
+
+[editor.whitespace]
+render = "all"
+
+# all / none
+# [editor.whitespace.render]
+# space = "all"
+# tab = "all"
+# newline = "all"
+
+[editor.whitespace.characters]
+space = " " # "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = " "
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+
+[keys.insert.j]
+k = "normal_mode"
+j = "normal_mode"
+
