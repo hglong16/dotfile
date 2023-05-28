@@ -3,9 +3,6 @@ return {
   { "nvim-pack/nvim-spectre", enabled = false },
   { "ggandor/flit.nvim", enabled = false },
   { "ggandor/leap.nvim", enabled = false },
-  { "L3MON4D3/LuaSnip", enabled = false },
-  { "rafamadriz/friendly-snippets", enabled = false },
-  { "saadparwaiz1/cmp_luasnip", enabled = false },
   { "nvim-pack/nvim-spectre", enabled = false },
   { "folke/todo-comments.nvim", enabled = false },
   { "zbirenbaum/copilot.lua", enabled = false },
@@ -13,6 +10,7 @@ return {
   { "zbirenbaum/copilot-cmp", enabled = false },
   { "mfussenegger/nvim-dap", enabled = false },
   { "rcarriga/nvim-dap-ui", enabled = false },
+  { "echasnovski/mini.indentscope", enabled = false },
   {
     "theHamsta/nvim-dap-virtual-text",
     opts = {},
