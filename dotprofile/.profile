@@ -34,3 +34,7 @@ export PATH="$PATH:/home/long/.local/share/JetBrains/Toolbox/scripts"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export PATH="$PATH:/usr/lib/dart/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

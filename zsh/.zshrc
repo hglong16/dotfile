@@ -26,42 +26,9 @@ alias ls="exa -G --colour always --icons"
 alias la="exa -l --icons"
 alias ll="exa --colour always -l --icons"
 alias lla="ll -a --colour always --icons"
+alias docker-compose="docker compose"
 
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE="/Users/hglong16/.micromamba/bin/micromamba";
-export MAMBA_ROOT_PREFIX="/Users/hglong16/micromamba";
-__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
-else
-    if [ -f "/Users/hglong16/micromamba/etc/profile.d/micromamba.sh" ]; then
-        . "/Users/hglong16/micromamba/etc/profile.d/micromamba.sh"
-    else
-        export  PATH="/Users/hglong16/micromamba/bin:$PATH"  # extra space after export prevents interference from conda init
-    fi
-fi
-unset __mamba_setup
-# <<< mamba initialize <<<
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/hglong16/micromamba/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/hglong16/micromamba/etc/profile.d/conda.sh" ]; then
-        . "/Users/hglong16/micromamba/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/hglong16/micromamba/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
-
-export PATH=~/Library/Application\ Support/pypoetry/venv/bin/:$PATH # poetry
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -74,8 +41,9 @@ eval "$(thefuck --alias)"
 
 # Created by `pipx` on 2023-01-17 08:22:59
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$PATH:/Users/hglong16/.local/bin"
 export PATH="$PATH:/~/.rye/shims:$PATH"
+export PATH="$PATH:/home/long/.local/bin:$PATH"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # pnpm
 export PNPM_HOME="/home/long/.local/share/pnpm"
@@ -85,3 +53,29 @@ case ":$PATH:" in
 esac
 # pnpm endexport NI_CONFIG_FILE=/home/long/.config/ni/nirca
 export NI_CONFIG_FILE="$HOME/.config/ni/nirc"
+
+# remove duplicate PATH
+
+PATH=`printf %s "$PATH" | awk -v RS=: '{ if (!arr[$0]++) {printf("%s%s",!ln++?"":":",$0)}}'`
+
+## [Completion] 
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/long/.dart-cli-completion/zsh-config.zsh ]] && . /home/long/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
+
+# bun completions
+[ -s "/home/long/.bun/_bun" ] && source "/home/long/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
